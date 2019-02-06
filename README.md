@@ -25,3 +25,6 @@ https://www.youtube.com/watch?v=LN8fBh7LH9k
 
 ###### Github Basics
 https://youtu.be/Loav1kbA640
+
+###### UI Basics
+https://material.io/design/
