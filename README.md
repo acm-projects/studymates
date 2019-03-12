@@ -30,7 +30,8 @@ https://youtu.be/Loav1kbA640
 https://material.io/design/
 
 # App setup
-```git clone git@github.com:acm-projects/studymates.git
+```bash
+git clone git@github.com:acm-projects/studymates.git
 cd studymates
 git checkout app
 ```
