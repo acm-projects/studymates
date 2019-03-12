@@ -28,3 +28,11 @@ https://youtu.be/Loav1kbA640
 
 ###### UI Basics
 https://material.io/design/
+
+# App setup
+```git clone git@github.com:acm-projects/studymates.git
+cd studymates
+git checkout app
+```
+In android studio, you will need to get dependencies (`flutter packages 
+get`)
