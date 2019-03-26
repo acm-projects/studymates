@@ -20,7 +20,21 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.indigo,
       ),
-      home: Text("Studymates Placeholder")
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("StudyMates"),
+        ),
+        drawer: Drawer(
+          child: ListView(
+            children: [
+              Text("Profile"),
+              Text("Settings"),
+              Text("My Sessions"),
+              Text("Upcoming Sessions"),
+            ]
+          )
+        ),
+      )
     );
   }
 }
