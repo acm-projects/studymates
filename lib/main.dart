@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:studymates_app/pages/home_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,45 +10,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
+        /*
+        Main app color. Swatch used because then the theme is propagated through children
+        See: https://flutter.dev/docs/cookbook/design/themes
+         */
         primarySwatch: Colors.indigo,
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("StudyMates"),
-        ),
-        drawer: Drawer(
-          child: ListView(
-            children: [
-              UserAccountsDrawerHeader(
-                accountName: Text("John Doe"),
-                accountEmail: Text("jxd000000@utdallas.edu"),
-                currentAccountPicture: CircleAvatar(
-                  child: Icon(Icons.person),
-                ),
-              ),
-
-              ListTile(
-                title: Text("Settings"),
-                leading: Icon(Icons.settings),
-              ),
-
-              ListTile(
-                title: Text("Upcoming Sessions"),
-                leading: Icon(Icons.alarm),
-              ),
-            ]
-          )
-        ),
-      )
+      home: new HomePage(),
     );
   }
 }
