@@ -31,7 +31,6 @@ class MyApp extends StatelessWidget {
                 accountName: Text("John Doe"),
                 accountEmail: Text("jxd000000@utdallas.edu"),
                 currentAccountPicture: CircleAvatar(
-                  backgroundColor: Theme.of(context).primaryColor, // not sure if cardcolor is right for this?
                   child: Icon(Icons.person),
                 ),
               ),
