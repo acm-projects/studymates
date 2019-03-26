@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.purple,
+        primarySwatch: Colors.indigo,
       ),
       home: Scaffold(
         appBar: AppBar(
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
                 accountName: Text("John Doe"),
                 accountEmail: Text("jxd000000@utdallas.edu"),
                 currentAccountPicture: CircleAvatar(
-                  backgroundColor: Theme.of(context).cardColor, // not sure if cardcolor is right for this?
+                  backgroundColor: Theme.of(context).primaryColor, // not sure if cardcolor is right for this?
                   child: Icon(Icons.person),
                 ),
               ),
