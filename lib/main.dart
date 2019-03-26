@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.indigo,
+        primarySwatch: Colors.purple,
       ),
       home: Scaffold(
         appBar: AppBar(
@@ -27,10 +27,24 @@ class MyApp extends StatelessWidget {
         drawer: Drawer(
           child: ListView(
             children: [
-              Text("Profile"),
-              Text("Settings"),
-              Text("My Sessions"),
-              Text("Upcoming Sessions"),
+              UserAccountsDrawerHeader(
+                accountName: Text("John Doe"),
+                accountEmail: Text("jxd000000@utdallas.edu"),
+                currentAccountPicture: CircleAvatar(
+                  backgroundColor: Theme.of(context).cardColor, // not sure if cardcolor is right for this?
+                  child: Icon(Icons.person),
+                ),
+              ),
+
+              ListTile(
+                title: Text("Settings"),
+                leading: Icon(Icons.settings),
+              ),
+
+              ListTile(
+                title: Text("Upcoming Sessions"),
+                leading: Icon(Icons.alarm),
+              ),
             ]
           )
         ),
