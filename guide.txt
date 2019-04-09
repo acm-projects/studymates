@@ -1,0 +1,24 @@
+How to get the map to work.
+
+Before you even do anything else make sure you are using an emulator that can support 
+play features we are using. The latest and greatest pixel phones do not work.
+I used a nexus 5X API 28. 
+
+Also double check and make sure the emulator has the latest version of google play
+sevices installed. Update it by clicking the three dots in the tool bar to bring up 
+the settings menu. Then there will be a tab that says "Google play serivces". click that
+and press the update button. Now the phone will open the google play store and you will
+have to sign in with a google acccount to finish the instialtion. 
+
+Now you are ready to make the changes in the following files:
+
+First make sure the mark the dependciecs for the google maps flutter widget in 
+AndroidManifest.xml. Make sure its the AndroidManifest 
+in NameOfYourProjectName/android/app/src/AndroidManifest.xml
+
+Then add the api key in NameOfYourProjectName/pubspec.ymal where
+specified in the pubspec.ymal file. The api key is not included because we dont want
+random people to steal it. get your own from https://developers.google.com/maps/documentation/embed/get-api-key
+or text Sid for his.
+
+Then use the code in main.dart to initlize the map.
